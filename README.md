@@ -60,7 +60,7 @@ O robô utiliza um design modular empilhado em três níveis distintos:
 
 ---
 
-## 👥 Equipe de Desenvolvimento (Grupo de Robótica)
+## 👥 Equipe de Desenvolvimento (Equipe Cronnos)
 
 Este projeto está sendo adaptado, montado e programado por:
 * **Adrielle Mendes** - [GitHub](https://github.com/AdrielleMendes)
