@@ -64,8 +64,8 @@ O robô utiliza um design modular empilhado em três níveis distintos:
 
 Este projeto está sendo adaptado, montado e programado por:
 * **Adrielle Mendes** - [GitHub](https://github.com/AdrielleMendes)
-* **Alane**-https://github.com/Alanemmartins
-* **Antônio**-https://github.com/toninhowow
+* **Alane Martins **-https://github.com/Alanemmartins
+* **Antônio Miranda **-https://github.com/toninhowow
 
 ## 📌 Créditos e Referências
 * **Projeto Base e Conceito de Hardware:** Baseado no robô inteligente SARAS criado por Anant Sharma https://youtu.be/IT1uBUsOmUY?si=wg5ped7aim7uzl9K
