@@ -1,80 +1,71 @@
-# SARAS – Smart Autonomous Robotic AI System
+# SARAS – Sistema Robótico Inteligente Autônomo com Inteligência Artificial
 
-SARAS (Smart Autonomous Robotic AI System) is a DIY AI-powered robot capable of basic navigation, vision, speech interaction, and autonomous behavior. This project focuses on the **hardware build**, ideal for hobbyists and AI enthusiasts looking to bring intelligence to life through robotics.
+O **SARAS** (Smart Autonomous AI Robotic System) é um robô com inteligência artificial (IA) do tipo "faça você mesmo" (DIY), capaz de realizar navegação básica, visão computacional, interação por voz e comportamento autônomo. Este repositório foca na **construção do hardware**, sendo ideal para estudantes, entusiastas e hobbistas que desejam dar vida à inteligência artificial por meio da robótica física.
 
-This README summarizes the hardware components, assembly steps, wiring notes, and project goals. A follow-up tutorial will cover software and AI integration.
-
----
-
-## Features
-
-- Modular 3-layer chassis (3D printed or custom material)
-- Raspberry Pi (3 or 4B)
-- 7-inch HDMI  display
-- Voice input (USB mic)
-- Audio output (USB speaker)
-- Vision via Pi Camera module
-- Basic motion control with DC motors
-- L298N driver
-- Obstacle detection using ultrasonic sensors
+Este arquivo resume os componentes de hardware, as etapas de montagem, as instruções de fiação e os objetivos gerais do projeto.
 
 ---
 
-## Components List
+## 🚀 Características
 
-| Component                      | Quantity | Notes |
-|-------------------------------|----------|-------|
-| DC Motors + Gear              | 4        | With small default tires |
-| Large Tires (custom)          | 4        | For better look and grip |
-| L298N Motor Driver            | 1        | For controlling DC motors |
-| Raspberry Pi (any model)      | 1        | Brain of the robot |
-| HDMI Display (7-inch)         | 1        | Robot face |
-| USB Omni-directional Mic      | 1        | Voice command input |
-| USB Speaker                   | 1        | Audio feedback |
-| Jumper Wires, Standoffs       | -        | For connections and stacking |
-| 18650 Batteries + Holder      | 2        | Powering motors |
-| 5V Power Bank                 | 1        | Powering Raspberry Pi |
-| Ultrasonic Sensors            | 3        | Obstacle detection |
-| 3D Printed Body / Cardboard   | -        | Custom-designed modular chassis |
+* **Chassi modular de 3 camadas:** Projetado para impressão 3D (ou materiais alternativos como acrílico/papelão).
+* **Processamento:** Raspberry Pi (3 ou 4B).
+* **Interface Visual:** Tela HDMI de 7 polegadas (para o "rosto" do robô).
+* **Entrada de Áudio:** Microfone omnidirecional USB (para comandos de voz).
+* **Saída de Áudio:** Alto-falante USB (para respostas do robô).
+* **Visão Computacional:** Módulo de Câmera oficial da Raspberry Pi.
+* **Locomoção:** Controle básico de movimento usando 4 motores CC.
+* **Driver de Motores:** Ponte H L298N.
+* **Prevenção de Colisões:** Detecção de obstáculos usando 3 sensores ultrassônicos.
 
 ---
 
-## Design Overview
+## 🛠️ Lista de Componentes
 
-The robot has a modular three-floor design:
-- **Base layer**: Motors, wheels, L298N, battery compartment
-- **Second layer**: Raspberry Pi
-- **Third layer**: mic, speaker, display, and camera
-- Designed in Fusion 360 
-
----
-
-## Wiring Diagram
-
-<img width="640" height="360" alt="BUILT THIS" src="https://github.com/user-attachments/assets/3aca4334-662c-4735-b3e1-43318b8df188" />
-
----
-
-## Build Steps Summary
-
-1. Attach motors to the chassis and add standoffs for tire clearance.
-2. Wire motors to L298N and ensure correct polarity.
-3. Add standoffs to prepare second floor.
-4. Mount Raspberry Pi and connect display, mic, speaker.
-5. Wire L298N to Raspberry Pi GPIO.
-6. Connect power: 18650s to L298N, power bank to Pi.
-7. Attach Pi Cam, ultrasonic sensors, and organize cables.
-8. Power on and verify boot + movement.
+| Componente | Quantidade | Notas |
+| :--- | :---: | :--- |
+| **Motores CC + Redução** | 4 | Motores comuns para chassi de robô |
+| **Pneus Grandes** | 4 | Rodas maiores para melhor tração e estética |
+| **Driver de Motor L298N** | 1 | Ponte H para controlar a velocidade e direção dos motores CC |
+| **Raspberry Pi** | 1 | O "cérebro" principal do robô |
+| **Monitor HDMI (7 polegadas)** | 1 | Usado para exibir as expressões e interface do robô |
+| **Microfone Omnidirecional USB** | 1 | Para capturar as ordens e comandos de voz |
+| **Alto-falante USB** | 1 | Para o feedback e respostas de áudio da IA |
+| **Fios Jumper e Espaçadores** | - | Para conexões elétricas e empilhamento das camadas |
+| **Baterias 18650 + Suporte** | 2 | Alimentação dedicada para os motores CC |
+| **Power Bank (5V)** | 1 | Alimentação estável dedicada para a Raspberry Pi |
+| **Sensores Ultrassônicos (HC-SR04)** | 3 | Para leitura de distância (frente, esquerda e direita) |
+| **Chassi Modular** | 1 | Estrutura de 3 andares impressa em 3D |
 
 ---
 
-## Author
+## 📐 Visão Geral do Design (Estrutura)
 
-Hi, I'm Anant, a data engineer and hobbyist — and SARAS was my first ever robotics project.  
-I built it to explore what happens when you give AI a body, and I’m sharing this journey so others like me can get started too.
+O robô utiliza um design modular empilhado em três níveis distintos:
+1. **Camada Base:** Abriga os motores, rodas, o driver L298N e o suporte de baterias dos motores.
+2. **Segunda Camada:** Onde fica fixada a Raspberry Pi e o Power Bank.
+3. **Terceira Camada (Topo):** Suporte para o microfone, alto-falante, câmera e a tela de 7 polegadas.
 
 ---
 
-## License
+## 🔌 Resumo das Etapas de Montagem
 
-MIT License – feel free to build, modify, and upgrade SARAS.
+1. Fixe os motores CC no chassi base, utilizando os espaçadores para garantir que as rodas grandes tenham espaço para girar livremente.
+2. Interligue os motores das laterais e conecte-os nas saídas do driver L298N (atenção à polaridade para as rodas não girarem ao contrário).
+3. Monte os espaçadores de latão/plástico para erguer a estrutura do segundo andar.
+4. Fixe a Raspberry Pi no segundo andar e posicione o banco de energia.
+5. Faça a fiação dos pinos de controle do L298N até os pinos **GPIO** da Raspberry Pi.
+6. Instale a câmera e os sensores ultrassônicos na estrutura do topo, conectando o monitor, microfone e alto-falante nas portas USB/HDMI da Pi.
+7. Ligue os sistemas de alimentação, verifique o boot do sistema e inicie os testes de movimentação.
+
+---
+
+## 👥 Equipe de Desenvolvimento (Grupo de Robótica)
+
+Este projeto está sendo adaptado, montado e programado por:
+* **Adrielle Mendes** - [GitHub](https://github.com/AdrielleMendes)
+* **Alane**-https://github.com/Alanemmartins
+* **Antônio**-https://github.com/toninhowow
+
+## 📌 Créditos e Referências
+* **Projeto Base e Conceito de Hardware:** Baseado no robô inteligente SARAS criado por Anant Sharma ([Tech With Anant](https://www.youtube.com/@techwithanant)).
