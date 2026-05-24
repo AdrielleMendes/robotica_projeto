@@ -68,4 +68,4 @@ Este projeto está sendo adaptado, montado e programado por:
 * **Antônio**-https://github.com/toninhowow
 
 ## 📌 Créditos e Referências
-* **Projeto Base e Conceito de Hardware:** Baseado no robô inteligente SARAS criado por Anant Sharma ([Tech With Anant](https://www.youtube.com/@techwithanant)).
+* **Projeto Base e Conceito de Hardware:** Baseado no robô inteligente SARAS criado por Anant Sharma https://youtu.be/IT1uBUsOmUY?si=wg5ped7aim7uzl9K
